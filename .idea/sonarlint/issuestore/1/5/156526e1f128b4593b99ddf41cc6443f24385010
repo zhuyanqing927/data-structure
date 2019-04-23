@@ -1,4 +1,0 @@
-
-ˆ"squid:ClassVariableVisibilityCheck"PMake next a static final constant or non-public and provide accessors if needed.(±±èÃøÿÿÿÿ8µÅÙÈ÷,
-œsquid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‡£8ŞÕûÈ÷,
-€"squid:ClassVariableVisibilityCheck"MMake e a static final constant or non-public and provide accessors if needed.(µºš¸8›İØÈ÷,
