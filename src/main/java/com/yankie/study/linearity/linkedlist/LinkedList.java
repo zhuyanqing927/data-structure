@@ -27,7 +27,9 @@ public class LinkedList<E> {
         }
     }
 
-    //头元素
+    /**
+     * 头节点，即第一个元素
+     */
     private Node head;
     private int size;
 

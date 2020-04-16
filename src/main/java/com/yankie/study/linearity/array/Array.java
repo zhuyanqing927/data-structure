@@ -5,15 +5,16 @@ package com.yankie.study.linearity.array;
  * 同一个数组中，只能存放相同类型的对象
  */
 public class Array<E> {
+    private static final Integer DEFAULT_CAPACITY = 10;
     private E[] data;
     private int size;
 
     public Array() {
-        this(10);
+        this(DEFAULT_CAPACITY);
     }
 
-    public Array(int catacity) {
-        data = (E[]) new Object[catacity];
+    public Array(int capacity) {
+        data = (E[]) new Object[capacity];
         size = 0;
     }
 
@@ -80,7 +81,7 @@ public class Array<E> {
      */
     public void removeElement(E e) {
         //先查找该元素的索引
-        int elementIndex = findIndex(e);
+        int elementIndex = indexOf(e);
         //根据索引删除元素
         if (elementIndex != -1) {
             remove(elementIndex);
@@ -142,7 +143,7 @@ public class Array<E> {
     /**
      * 查找元素索引(查找第一个)
      */
-    public int findIndex(E e) {
+    public int indexOf(E e) {
         for (int i = 0; i < size; i++) {
             if (data[i].equals(e)) {
                 return i;
@@ -162,7 +163,7 @@ public class Array<E> {
      * 查找数组中是否含指定元素
      */
     public boolean contains(E e) {
-        int elementIndex = findIndex(e);
+        int elementIndex = indexOf(e);
         if (elementIndex != -1) {
             return true;
         }
